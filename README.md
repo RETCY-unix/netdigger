@@ -14,7 +14,7 @@
 
 A powerful, feature-rich network packet sniffer and analyzer built in C for Linux systems. NetDigger captures and analyzes network traffic with comprehensive filtering options, detailed packet inspection, and flexible output formats.
 
-## ✨ Features
+##  Features
 
 - **Multi-Protocol Support**: TCP, UDP, ICMP packet capture and analysis
 - **Advanced Filtering**: Filter by IP addresses, ports, protocols, and network interfaces
@@ -26,14 +26,14 @@ A powerful, feature-rich network packet sniffer and analyzer built in C for Linu
 - **Graceful Shutdown**: Signal handling for clean exit and final statistics
 - **MAC Address Resolution**: Interface MAC address lookup and display
 
-## 🔧 Requirements
+##  Requirements
 
 - **Operating System**: Linux
 - **Privileges**: Root access (required for raw socket creation)
 - **Compiler**: GCC with standard libraries
 - **Dependencies**: Standard Linux networking headers
 
-## 📦 Installation
+##  Installation
 
 1. **Clone or download** the NetDigger source files
 2. **Compile** using the provided Makefile:
@@ -52,7 +52,7 @@ If you prefer manual compilation:
 gcc -Wall -Wextra -O2 -o netdigger sniffer.c
 ```
 
-## 🚀 Usage
+##  Usage
 
 ### Basic Usage
 ```bash
@@ -150,23 +150,15 @@ NetDigger provides detailed packet analysis including:
 - ASCII representation with printable characters
 - Configurable payload size limits
 
-## 📁 File Structure
 
-```
-netdigger/
-├── sniffer.c      # Main source code
-├── Makefile       # Build configuration
-└── README.md      # This file
-```
-
-## 🔒 Security Considerations
+##  Security Considerations
 
 - **Root Privileges**: NetDigger requires root access to create raw sockets
 - **Network Monitoring**: Ensure compliance with local network policies
 - **Data Privacy**: Be mindful of sensitive information in captured packets
 - **Legal Compliance**: Use only on networks you own or have permission to monitor
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -199,7 +191,7 @@ sudo yum install gcc make
 - Consider packet count limits for long-running captures
 - Use appropriate statistics intervals for monitoring
 
-## 📈 Statistics and Monitoring
+##  Statistics and Monitoring
 
 NetDigger provides real-time statistics including:
 - Total packets processed
@@ -212,7 +204,7 @@ Example output:
 [STATS] Processed: 15420 | Filtered: 1534 | Match Rate: 9.95%
 ```
 
-## 🛠️ Advanced Usage
+## Advanced Usage
 
 ### Combining Filters
 ```bash
@@ -229,13 +221,7 @@ sudo ./netdigger -u -i wlan0 -x -a -c 500
 sudo ./netdigger -v -S 10000 -f long_term.log &
 ```
 
-## 🤝 Contributing
 
-Contributions are welcome! Please ensure:
-- Code follows existing style and structure
-- New features include appropriate documentation
-- Testing on multiple Linux distributions
-- Proper error handling and resource cleanup
 
 ## 📄 License
 
